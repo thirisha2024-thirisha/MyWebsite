@@ -3,33 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Supply Chain Management</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
-        }
-        h1 {
-            color: darkblue;
-            text-align: center;
-        }
-        h2 {
-            color: darkgreen;
-        }
-        p {
-            font-size: 16px;
-        }
-        ul {
-            font-size: 15px;
-        }
-    </style>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -37,8 +15,8 @@
 
     <h2>Definition</h2>
     <p>
-        Supply Chain Management (SCM) is the process of managing the flow of goods,
-        services, information, and finances from raw materials to final delivery to customers.
+        Supply Chain Management manages the flow of goods,
+        services, and information from supplier to customer.
     </p>
 
     <h2>Key Components</h2>
@@ -50,27 +28,16 @@
         <li>Returns</li>
     </ul>
 
-    <h2>Objectives</h2>
-    <ul>
-        <li>Reduce costs</li>
-        <li>Improve efficiency</li>
-        <li>Enhance customer satisfaction</li>
-        <li>Ensure timely delivery</li>
-    </ul>
+    <!-- Buttons -->
+    <button onclick="showMessage()">Show Message</button>
+    <button onclick="changeColor()">Change Background</button>
+    <button onclick="showTime()">Show Time</button>
 
-    <h2>Advantages</h2>
-    <ul>
-        <li>Better inventory management</li>
-        <li>Improved coordination</li>
-        <li>Higher profit margins</li>
-    </ul>
-
-    <h2>Conclusion</h2>
-    <p>
-        SCM plays a vital role in modern businesses by ensuring smooth operations
-        and customer satisfaction.
-    </p>
+    <p id="time"></p>
 </div>
+
+<!-- Connect JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
