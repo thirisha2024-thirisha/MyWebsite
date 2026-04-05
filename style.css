@@ -2,18 +2,19 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 20px;
+    transition: 0.5s;
 }
 
 .container {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
 }
 
 h1 {
-    color: darkblue;
     text-align: center;
+    color: darkblue;
 }
 
 h2 {
@@ -21,14 +22,25 @@ h2 {
 }
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
     margin: 10px;
+    border: none;
     background-color: #3498db;
     color: white;
-    border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #2ecc71;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
 }
