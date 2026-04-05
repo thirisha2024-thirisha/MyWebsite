@@ -1,15 +1,12 @@
-// Function to show welcome message
 function showMessage() {
-    alert("Welcome to My DevOps Website 🚀");
+    alert("Welcome to Multi environment Static Website 🚀");
 }
 
-// Change background color
 function changeColor() {
-    document.body.style.backgroundColor = "#f0f8ff";
+    document.body.style.backgroundColor = "#e6f7ff";
 }
 
-// Display current date and time
-function showDateTime() {
+function showTime() {
     const now = new Date();
     document.getElementById("time").innerHTML =
         "Current Time: " + now.toLocaleString();
