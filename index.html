@@ -1,29 +1,54 @@
-// Popup when URL opens
-window.addEventListener("load", function () {
-    alert("Welcome! CI/CD Website Successfully Deployed 🚀");
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multi Environment CI/CD Website</title>
 
-// Show Current Time
-function showTime() {
-    const now = new Date();
-    document.getElementById("time").innerHTML =
-        "Current Time: " + now.toLocaleString();
-}
+<link rel="stylesheet" href="style.css">
 
-// Change Background Color
-function changeColor() {
-    const colors = ["lightblue", "lightgreen", "lightyellow", "lavender"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;
-}
+</head>
 
-// Dark Mode Toggle
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-}
+<body>
 
-// Automatic Dark Mode (after 7 PM)
-const hour = new Date().getHours();
-if (hour >= 19) {
-    document.body.classList.add("dark-mode");
-}
+<div class="container">
+
+<h1>Multi Environment Static Website Deployment using CI/CD</h1>
+
+<h2>Project Description</h2>
+<p>
+This project demonstrates automated deployment of a static website using
+Software Configuration Management and CI/CD pipeline.
+Whenever code changes are pushed to GitHub, the website automatically updates.
+</p>
+
+<h2>Project Advantages</h2>
+<ul>
+<li>Automatic deployment</li>
+<li>Version control tracking</li>
+<li>Reduced manual errors</li>
+<li>Fast delivery of updates</li>
+<li>Team collaboration support</li>
+</ul>
+
+<h2>Project Uses</h2>
+<ul>
+<li>Website hosting automation</li>
+<li>DevOps learning</li>
+<li>Continuous Integration practice</li>
+<li>Software Configuration Management implementation</li>
+</ul>
+
+<h2>Features</h2>
+
+<button onclick="showTime()">Show Current Time</button>
+<button onclick="changeColor()">Change Background</button>
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<p id="time"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
